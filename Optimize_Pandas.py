@@ -89,7 +89,7 @@ def Optimize_DF(dataframe):
             elif optimal_type == 'bool':
                 values = dataframe[col].unique()
                 dataframe[col].replace({values[0]:0,values[1]:1},inplace = True)
-            elif optimal_type == 'date':
+            elif optimal_type == 'datetime':
                 dataframe[col] = pd.to_datetime(dataframe[col])
             else:
                 dataframe[col] = dataframe[col].astype(optimal_type)
