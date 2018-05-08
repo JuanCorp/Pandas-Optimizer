@@ -45,7 +45,7 @@ def Optimize_Float(series):
     if distribution['min'] > -100 and distribution['max'] < 100:
         final_type = 'float16'
     
-    elif distirbution['min'] > -1e6 and distribution ['max'] < 1e6:
+    elif distribution['min'] > -1e6 and distribution ['max'] < 1e6:
         final_type = 'float32'
     else:
         final_type = 'float64'
