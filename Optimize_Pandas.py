@@ -34,7 +34,7 @@ def Optimize_Int(series):
         
     elif unsigned:
         final_type = "uint64"
-    else
+    else:
         final_type = "int64"
     
     return final_type
